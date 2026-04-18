@@ -1,0 +1,102 @@
+/* =========================================
+   Estilos Globales
+   ========================================= */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* =========================================
+   Header y Navegación
+   ========================================= */
+.main-header {
+    width: 100%;
+    background-color: #333; /* Fondo de seguridad si la imagen no carga */
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    background-color: #222; /* Fondo ligeramente más oscuro para el menú */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Color azul al pasar el mouse */
+}
+
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../img/banner.jpg');
+    background-size: cover;background-position: center;
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Sombra para resaltar el texto */
+    letter-spacing: 1px;
+}
+
+.banner p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    font-weight: 300;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* =========================================
+   Contenido Principal y Footer
+   ========================================= */
+.main-container {
+    max-width: 800px;
+    margin: 40px auto; /* Centra el contenedor con margen arriba/abajo */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave para el contenido */
+    border-radius: 8px;
+    text-align: center;
+}
+
+code {
+    background-color: #eee;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
