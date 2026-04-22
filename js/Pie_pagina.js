@@ -1,16 +1,17 @@
-// pie-pagina.js
-document.addEventListener("DOMContentLoaded", function() {
-    const footerHTML = `
-    <footer>
-        <p>© 2026 My Aplicacion. All rights reserved.</p>
-    </footer>
-    <iframe data-testid="embed-iframe" style="border-radius:12px"
-        src="https://open.spotify.com/embed/track/2xPQjEJca0tRpvNxj0RP0f?utm_source=generator" width="40%" height="150"
-        frameBorder="0" allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-    </iframe>
-    `;
+// pie_pagina.js
+async function cargarFooter() {
+    try {
+        const respuesta = await fetch('pie_pagina.html');
+        if (!respuesta.ok) throw new Error("No se pudo cargar el pie de página");
+        
+        const html = await respuesta.text();
+        
+        // Insertamos el contenido al final del body
+        document.body.insertAdjacentHTML('beforeend', html);
+    } catch (error) {
+        console.error("Error cargando el footer:", error);
+    }
+}
 
-    // Insertamos el contenido al final del body
-    document.body.insertAdjacentHTML('beforeend', footerHTML);
-});
+// Ejecutar cuando el DOM esté listo
+document.addEventListener("DOMContentLoaded", cargarFooter);
