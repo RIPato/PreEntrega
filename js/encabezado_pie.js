@@ -1,30 +1,27 @@
 // layout.js
 
-// Función para el encabezado
 async function cargarEncabezado() {
+    console.log("Iniciando carga de encabezado...");
     try {
-        const respuesta = await fetch('encabezado.html');
-        if (!respuesta.ok) throw new Error("No se pudo cargar el encabezado");
+        const respuesta = await fetch('Encabezado_pie/encabezado.html');
+        if (!respuesta.ok) throw new Error("No se encontró encabezado.html");
         const html = await respuesta.text();
         document.body.insertAdjacentHTML('afterbegin', html);
+        console.log("Encabezado insertado correctamente");
     } catch (error) {
-        console.error("Error:", error);
+        console.error("Error en Encabezado:", error);
     }
 }
 
-// Función para el pie de página
 async function cargarFooter() {
+    console.log("Iniciando carga de footer...");
     try {
-        const respuesta = await fetch('pie_pagina.html');
-        if (!respuesta.ok) throw new Error("No se pudo cargar el pie de página");
+        const respuesta = await fetch('Encabezado_pie/pie_pagina.html');
+        if (!respuesta.ok) throw new Error("No se encontró pie_pagina.html");
         const html = await respuesta.text();
         document.body.insertAdjacentHTML('beforeend', html);
+        console.log("Footer insertado correctamente");
     } catch (error) {
-        console.error("Error:", error);
+        console.error("Error en Footer:", error);
     }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    cargarEncabezado();
-    cargarFooter();
-});
