@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de Pagina Web</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/encabezado.js" defer></script>
+    <script src="js/encabezado_pie.js"></script>
+    <script> cargarEncabezado(); // Solo carga el header  </script>
 </head>
 
 <body>
@@ -21,9 +22,7 @@
         <p>El estilo se carga desde <code>css/styles.css</code> y busca la imagen en <code>img/banner.jpg</code>.</p>
     </main>
 
-     <footer>
-        <script src="js/Pie_pagina.js" defer></script>
-    </footer>
+    <footer><script> cargarEncabezado(); </script></footer>
     
 </body>
 

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de Pagina Web</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/encabezado.js"></script>
+    <script src="js/encabezado_pie.js"></script>
+    <script> cargarEncabezado(); // Solo carga el header  </script>
 </head>
 
 <body>
@@ -22,9 +23,7 @@
         <label style="display: flex; align-items: center; margin-bottom: 15px;"> <span style="width: 100px;">Mensaje:</span> <textarea name="mensaje" style="width: 100%; height: 100px;" required></textarea> </label>
         <button type="submit" style="padding: 10px 20px; cursor: pointer;">Send</button>
     </form>
-    <footer>
-        <script src="js/Pie_pagina.js" defer></script>
-    </footer>
+    <footer><script> cargarEncabezado(); </script></footer>
 </body>
 
 </html>
