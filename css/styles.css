@@ -100,3 +100,19 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
+
+.formulario_contacto{
+    width: 100px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    
+    /* Efecto 3D avanzado con múltiples capas de sombra */
+    
+    text-shadow: 
+        
+        2px 2px 0px #444,
+        3px 3px 0px #444;
+        
+}

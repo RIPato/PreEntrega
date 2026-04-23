@@ -1,27 +1,45 @@
-<form action="https://formspree.io/f/mnjlodlb" method="POST" 
-      style="max-width: 400px; margin: 20px auto; padding: 20px; background-color: darkgrey; border: 1px solid #ccc; border-radius: 5px;">
-    
-    <label style="display: flex; align-items: center; margin-bottom: 15px;"> 
-        <span style="width: 100px;">Nombre:</span> 
-        <input type="text" name="name" style="flex: 1; padding: 5px;" required> 
+<form action="https://formspree.io/f/mnjlodlb" method="POST"
+    style="max-width: 400px; margin: 20px auto; padding: 20px; background-color: #222; border: 1px solid #ccc; border-radius: 5px;">
+
+    <label style="display: flex; align-items: center; margin-bottom: 15px;">
+        <span class="formulario_contacto">Nombre:</span>
+        <input type="text" name="name" style="flex: 1; padding: 5px;" required>
     </label>
 
-    <label style="display: flex; align-items: center; margin-bottom: 15px;"> 
-        <span style="width: 100px;">Teléfono:</span> 
-        <input type="number" name="telefono" style="flex: 1; padding: 5px;" required> 
+    <label style="display: flex; align-items: center; margin-bottom: 15px;">
+        <span class="formulario_contacto">Teléfono:</span>
+        <input type="number" name="telefono" style="flex: 1; padding: 5px;" required>
     </label>
 
-    <label style="display: flex; align-items: center; margin-bottom: 15px;"> 
-        <span style="width: 100px;">Email:</span> 
-        <input type="email" name="email" style="flex: 1; padding: 5px;" required> 
+    <label style="display: flex; align-items: center; margin-bottom: 15px;">
+        <span class="formulario_contacto">Email:</span>
+        <input type="email" name="email" style="flex: 1; padding: 5px;" required>
     </label>
 
-    <label style="display: flex; align-items: flex-start; margin-bottom: 15px;"> 
-        <span style="width: 100px;">Mensaje:</span> 
-        <textarea name="mensaje" style="flex: 1; height: 100px; padding: 5px;" required></textarea> 
+    <label style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+        <span class="formulario_contacto">Mensaje:</span>
+        <textarea name="mensaje" style="flex: 1; height: 100px; padding: 5px;" required></textarea>
     </label>
 
-    <div style="text-align: right;">
-        <button type="submit" style="padding: 10px 20px; cursor: pointer; background-color: #333; color: white; border: none; border-radius: 3px;">Send</button>
+    <div style="display: flex; justify-content: flex-end; width: 100%; margin-top: 20px;">
+
+        <button type="submit" style="
+            padding: 12px 25px; 
+            cursor: pointer; 
+            background-color: #333; 
+            color: white; 
+            border: 2px solid #000; 
+            border-radius: 4px; 
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 4px 4px 0px #000; 
+            transition: all 0.1s;
+            outline: none;
+        " onmousedown="this.style.transform='translate(2px, 2px)'; this.style.boxShadow='2px 2px 0px #000';"
+            onmouseup="this.style.transform='translate(0, 0)'; this.style.boxShadow='4px 4px 0px #000';"
+            onmouseleave="this.style.transform='translate(0, 0)'; this.style.boxShadow='4px 4px 0px #000';">
+            Enviar
+        </button>
+
     </div>
 </form>
