@@ -76,7 +76,7 @@ nav ul li a:hover {
     margin: 40px auto; /* Centra el contenedor con margen arriba/abajo */
     padding: 20px;
     background-color: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave para el contenido */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* Sombra suave para el contenido */
     border-radius: 8px;
     text-align: center;
 }
@@ -115,4 +115,68 @@ footer p {
         2px 2px 0px #444,
         3px 3px 0px #444;
         
+}
+
+/* video */
+
+.video-container {
+    display: flex;          /* Activamos el modo flexible */
+    justify-content: center; /* Centra el contenido de forma horizontal */
+    align-items: center;     /* Centra el contenido de forma vertical (opcional) */
+    margin: 20px 0;         /* Agrega un margen arriba y abajo para que no esté pegado */
+}
+
+/* nuevo estilos para el index*/
+/* 1. Fondo con degradado sutil para el Body */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;[cite: 1]
+    line-height: 1.6;[cite: 1]
+    /* Cambio al color de fondo del pie de página */
+    background-color: #222;
+    /* Cambio de color de texto para que resalte sobre el oscuro */
+    color: #eee; 
+}
+
+/* 2. El "Contenedor Premium" (Sombra más oscura y borde azul) */
+.main-container {
+    max-width: 800px;[cite: 1]
+    margin: 40px auto;[cite: 1]
+    padding: 20px;[cite: 1]
+    background-color: #333; /* Un gris apenas más claro para dar profundidad */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);[cite: 1]
+    border-radius: 8px;[cite: 1]
+    color: white; /* Texto blanco dentro del contenedor */
+}
+
+.main-container:hover {
+    transform: translateY(-5px); /* Se levanta sutilmente al pasar el mouse */
+}
+
+/* 3. Títulos con estilo 'Tech' */
+h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #070707;
+     text-shadow: 
+        
+        2px 2px 0px #444,
+        3px 3px 0px #444;
+}
+
+/* 4. Resaltado de código innovador */
+code {
+    background-color: #3498db;
+    color: white;
+    padding: 3px 8px;
+    font-weight: bold;
+    box-shadow: 2px 2px 0px #2980b9;
+}
+
+/* 5. Línea divisoria moderna */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, #3498db, transparent);
+    margin: 30px 0;
 }

@@ -9,24 +9,55 @@
     <script src="js/JavasScript.js"></script>
 </head>
 
-<body>
+<body style="background-color: #444;">
     <script>
         cargarEncabezado();
     </script>
     <header class="main-header">
 
     </header>
+    <div class="video-container">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/bLf7CNtLCJc?autoplay=1&mute=1&loop=1&playlist=bLf7CNtLCJc"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+    </div>
+    <main class="main-container"  style="background-color: #333;">
+        <section>
+            <h2>Materializando el futuro</h2>
+            <p>Impulsamos la innovación mediante tecnología <code>FDM</code>, creando objetos que desafían lo
+                convencional en diseño y funcionalidad.</p>
+        </section>
 
-    <main class="main-container">
-        <h1>¡Imagen Cargada!</h1>
-        <p>Si la estructura de carpetas es correcta, deberías ver la imagen de fondo en el encabezado.</p>
-        <p>El estilo se carga desde <code>css/styles.css</code> y busca la imagen en <code>img/banner.jpg</code>.</p>
+        <hr>
+
+        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+            <div>
+                <h3>Decoración Nórdica</h3>
+                <p>Piezas orgánicas y geométricas impresas con precisión quirúrgica para transformar tus ambientes.</p>
+            </div>
+            <div>
+                <h3>Soportes TV Box</h3>
+                <p>Ingeniería aplicada al hogar: máxima ventilación y estética integrada para tus dispositivos.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Presencia en CABA y Todo el País</h3>
+            <p>Retiros estratégicos en <strong>CABA</strong> y envíos blindados vía <strong>Mercado Libre</strong>. Tu
+                proyecto, donde lo necesites.</p>
+        </section>
+
+        <div class="video-container">
+            <span class="formulario_contacto">RS 3D</span>
+        </div>
     </main>
 
-
 </body>
-    <script>
-        cargarFooter();
-    </script>
+<script>
+    cargarFooter();
+</script>
 
 </html>
