@@ -49,3 +49,11 @@ async function cargarContacto() {
         console.error("Error cargando contacto:", error);
     }
 }
+
+function configurarTitulo() {
+    // Editá esto para cambiar el nombre en TODAS las páginas a la vez
+    const tituloGlobal = "Proyecto de Impresión 3D - RS 3D";
+    
+    // Esto busca la etiqueta <title> en el head y le asigna el texto
+    document.title = tituloGlobal;
+}
