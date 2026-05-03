@@ -3,7 +3,7 @@
 async function cargarEncabezado() {
     console.log("Iniciando carga de encabezado...");
     try {
-        const respuesta = await fetch('Encabezado_pie/encabezado.html');
+        const respuesta = await fetch('encabezado_pie/encabezado.html');
         if (!respuesta.ok) throw new Error("No se encontró encabezado.html");
         const html = await respuesta.text();
         document.body.insertAdjacentHTML('afterbegin', html);
@@ -16,7 +16,7 @@ async function cargarEncabezado() {
 async function cargarFooter() {
     console.log("Iniciando carga de footer...");
     try {
-        const respuesta = await fetch('Encabezado_pie/pie_pagina.html');
+        const respuesta = await fetch('encabezado_pie/pie_pagina.html');
         if (!respuesta.ok) throw new Error("No se encontró pie_pagina.html");
         const html = await respuesta.text();
         document.body.insertAdjacentHTML('beforeend', html);
