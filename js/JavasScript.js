@@ -1,7 +1,7 @@
 async function cargarEncabezado() {
     console.log("Iniciando carga de encabezado...");
     try {
-        const respuesta = await fetch('encabezado_pie/encabezado.html');
+        const respuesta = await fetch('views/encabezado_pie/encabezado.html');
         if (!respuesta.ok) throw new Error("No se encontró encabezado.html");
         const html = await respuesta.text();
         document.body.insertAdjacentHTML('afterbegin', html);
