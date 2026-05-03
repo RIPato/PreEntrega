@@ -1,9 +1,7 @@
-// layout.js
-
 async function cargarEncabezado() {
     console.log("Iniciando carga de encabezado...");
     try {
-        const respuesta = await fetch('./encabezado_pie/encabezado.html');
+        const respuesta = await fetch('encabezado_pie/encabezado.html');
         if (!respuesta.ok) throw new Error("No se encontró encabezado.html");
         const html = await respuesta.text();
         document.body.insertAdjacentHTML('afterbegin', html);
@@ -16,7 +14,7 @@ async function cargarEncabezado() {
 async function cargarFooter() {
     console.log("Iniciando carga de footer...");
     try {
-        const respuesta = await fetch('./encabezado_pie/pie_pagina.html');
+        const respuesta = await fetch('encabezado_pie/pie_pagina.html');
         if (!respuesta.ok) throw new Error("No se encontró pie_pagina.html");
         const html = await respuesta.text();
         document.body.insertAdjacentHTML('beforeend', html);
@@ -25,8 +23,6 @@ async function cargarFooter() {
         console.error("Error en Footer:", error);
     }
 }
-// carga el primer formulario de contacto en la sección correspondiente
-// Añade esto a js/encabezado_pie.js
 
 async function cargarContacto() {
     console.log("Intentando cargar el formulario...");
@@ -51,9 +47,7 @@ async function cargarContacto() {
 }
 
 function configurarTitulo() {
-    // Editá esto para cambiar el nombre en TODAS las páginas a la vez
     const tituloGlobal = "Proyecto de Impresión 3D - RS 3D";
     
-    // Esto busca la etiqueta <title> en el head y le asigna el texto
     document.title = tituloGlobal;
 }
