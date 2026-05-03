@@ -1,0 +1,18 @@
+const encabezadoHTML = `
+<div class="header-video-container">
+    <div class="banner"></div>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+`;
+
+function cargarEncabezado() {
+    // Insertamos el código directamente al principio del body
+    document.body.insertAdjacentHTML('afterbegin', encabezadoHTML);
+    console.log("Encabezado inyectado sin fetch (compatible con doble clic)");
+}

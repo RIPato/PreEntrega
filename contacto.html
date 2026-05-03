@@ -4,24 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>RS 3D - Proyectos de Impresión</title>
+
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/JavasScript.js"></script>
-    <script> configurarTitulo();  </script>
-    <script> cargarEncabezado();// Solo carga el header </script>
+
+    <!-- Scripts: Cargamos el JS general y los "componentes" del encabezado y pie -->
+    <!-- Nota: Asegúrate de que los nombres de archivos coincidan en tu carpeta -->
+    <script src="js/Javascript.js"></script>
+    <script src="js/encabezado.js"></script>
+    <script src="js/pie_pagina.js"></script>
 </head>
 
-<body>
-    <header class="main-header">
-        <div id="seccion-contacto"></div>
-        <script src="menu-componente.js"></script>
-    </header>
-
-    <script>cargarContacto();</script>
+<body style="background-color: #444; margin: 0; font-family: Arial, sans-serif;">
 
 
-        <script> cargarFooter();// carga el footer </script>
- 
+
+    <main class="main-container"
+        style="background-color: #333; color: white; padding: 40px; max-width: 900px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+
+        <form action="https://formspree.io/f/mnjlodlb" method="POST" <main class="main-container"
+            style="background-color: #333; margin: 20px auto; padding: 20px; max-width: 400px;">
+
+            <form action="https://formspree.io/f/mnjlodlb" method="POST"
+                style="background-color: transparent; border: none;">
+                <!-- Quitamos el borde y el color de fondo del form para que use el del contenedor -->
+
+                <label style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span class="formulario_contacto">Nombre:</span>
+                    <input type="text" name="name" style="flex: 1; padding: 5px;" required>
+                </label>
+
+                <label style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span class="formulario_contacto">Teléfono:</span>
+                    <input type="number" name="telefono" style="flex: 1; padding: 5px;" required>
+                </label>
+
+                <label style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span class="formulario_contacto">Email:</span>
+                    <input type="email" name="email" style="flex: 1; padding: 5px;" required>
+                </label>
+
+                <label style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                    <span class="formulario_contacto">Mensaje:</span>
+                    <textarea name="mensaje" style="flex: 1; height: 100px; padding: 5px;" required></textarea>
+                </label>
+
+                <div style="display: flex; justify-content: flex-end; width: 100%; margin-top: 20px;">
+                    <button type="submit" style="
+                padding: 12px 25px; 
+                cursor: pointer; 
+                background-color: #444; 
+                color: white; 
+                border: 2px solid #000; 
+                border-radius: 4px; 
+                font-weight: bold;
+                text-transform: uppercase;
+                box-shadow: 4px 4px 0px #000; 
+                transition: all 0.1s;
+                outline: none;
+                position: relative;           
+                " onmousedown="this.style.transform='translate(0px, 0px)'; this.style.boxShadow='2px 2px 0px #000';"
+                        onmouseup="this.style.transform='translate(0, 0)'; this.style.boxShadow='4px 4px 0px #000';"
+                        onmouseleave="this.style.transform='translate(0, 0)'; this.style.boxShadow='4px 4px 0px #000';">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+    </main>
+    </form>
+
+
+    </main>
+
+    <script>
+
+
+        configurarTitulo();   // Configura el título de la pestaña
+        cargarEncabezado();   // Inyecta el HTML del encabezado desde encabezado.js
+        cargarFooter();       // Inyecta el HTML del footer desde pie_pagina.js
+        cargarContacto();     
+    </script>
+
 </body>
 
 </html>

@@ -4,61 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="js/JavasScript.js"></script>
-    <script> configurarTitulo();  </script>
+    <title>RS 3D - Proyectos de Impresión</title>
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Scripts: Cargamos el JS general y los "componentes" del encabezado y pie -->
+    <!-- Nota: Asegúrate de que los nombres de archivos coincidan en tu carpeta -->
+    <script src="js/Javascript.js"></script>
+    <script src="js/encabezado.js"></script>
+    <script src="js/pie_pagina.js"></script>
 </head>
 
-<body style="background-color: #444;">
-    <script>
-        cargarEncabezado();
-    </script>
-    <header class="main-header">
+<body style="background-color: #444; margin: 0; font-family: Arial, sans-serif;">
 
-    </header>
-    <div class="video-container">
+    <!-- El encabezado se inyectará aquí automáticamente mediante la función cargarEncabezado() -->
+
+    <div class="video-container" style="text-align: center; background-color: #000; padding: 20px 0;">
         <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/bLf7CNtLCJc?autoplay=1&mute=1&loop=1&playlist=bLf7CNtLCJc&controls=0&modestbranding=1"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-        </iframe>
+                src="https://www.youtube.com/embed/bLf7CNtLCJc?autoplay=1&mute=1&loop=1&playlist=bLf7CNtLCJc&controls=0&modestbranding=1"
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+</iframe>
     </div>
-    <main class="main-container" style="background-color: #333;">
-        <section>
-            <h2>Materializando el futuro.</h2>
-            <p>Impulsamos la innovación mediante tecnología FDM, creando objetos que desafían lo
-                convencional en diseño y funcionalidad.</p>
+
+    <main class="main-container" style="background-color: #333; color: white; padding: 40px; max-width: 900px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+        
+        <section style="text-align: center; margin-bottom: 40px;">
+            <h2 style="text-transform: uppercase; letter-spacing: 2px; color: #f0f0f0;">Materializando el futuro.</h2>
+            <p style="line-height: 1.6; color: #ccc;">
+                Impulsamos la innovación mediante tecnología FDM, creando objetos que desafían lo convencional en diseño y funcionalidad.
+            </p>
         </section>
 
-        <hr>
+        <hr style="border: 0; border-top: 1px solid #555; margin: 30px 0;">
 
-        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-            <div>
-                <h3>Decoración Nórdica</h3>
-                <p>Piezas orgánicas y geométricas impresas con precisión quirúrgica para transformar tus ambientes.</p>
+        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center;">
+            <div style="padding: 20px; background: #3d3d3d; border-radius: 5px;">
+                <h3 style="color: #fff;">Decoración Nórdica</h3>
+                <p style="color: #bbb; font-size: 0.9em;">Piezas orgánicas y geométricas impresas con precisión quirúrgica para transformar tus ambientes.</p>
             </div>
-            <div>
-                <h3>Soportes TV Box</h3>
-                <p>Ingeniería aplicada al hogar: máxima ventilación y estética integrada para tus dispositivos.</p>
+            <div style="padding: 20px; background: #3d3d3d; border-radius: 5px;">
+                <h3 style="color: #fff;">Soportes TV Box</h3>
+                <p style="color: #bbb; font-size: 0.9em;">Ingeniería aplicada al hogar: máxima ventilación y estética integrada para tus dispositivos.</p>
             </div>
         </section>
 
-        <hr>
+        <hr style="border: 0; border-top: 1px solid #555; margin: 30px 0;">
 
-        <section>
-            <h3>Presencia en CABA y Todo el País</h3>
-            <p>Retiros estratégicos en <strong>CABA</strong> y envíos blindados vía <strong>Mercado Libre</strong>. Tu
-                proyecto, donde lo necesites.</p>
+        <section style="text-align: center; padding: 20px;">
+            <h3 style="color: #fff;">Presencia en CABA y Todo el País</h3>
+            <p style="color: #ccc;">
+                Retiros estratégicos en <strong>CABA</strong> y envíos blindados vía <strong>Mercado Libre</strong>. Tu proyecto, donde lo necesites.
+            </p>
         </section>
 
-        <div class="video-container">
-            <span class="formulario_contacto">RS 3D</span>
+        <!-- Contenedor para el formulario de contacto (Cargado por cargarContacto en JavasScript.js) -->
+        <div id="seccion-contacto" style="margin-top: 30px; text-align: center; min-height: 50px;">
+            <span class="formulario_contacto" style="color: #888;">RS 3D</span>
         </div>
+
     </main>
 
-</body>
-<script>
-    cargarFooter();
-</script>
+    <!-- El pie de página se inyectará aquí automáticamente mediante cargarFooter() -->
 
+    <script>
+        
+        
+        configurarTitulo();   // Configura el título de la pestaña
+        cargarEncabezado();   // Inyecta el HTML del encabezado desde encabezado.js
+        cargarFooter();       // Inyecta el HTML del footer desde pie_pagina.js
+        cargarContacto();     
+    </script>
+
+</body>
 </html>
