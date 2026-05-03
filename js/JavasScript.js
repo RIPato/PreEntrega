@@ -1,7 +1,7 @@
 async function cargarEncabezado() {
     console.log("Iniciando carga de encabezado...");
     try {
-        const respuesta = await fetch('views/encabezado.html');
+        const respuesta = await fetch('encabezado_pie/encabezado.html');
         if (!respuesta.ok) throw new Error("No se encontró encabezado.html");
         const html = await respuesta.text();
         document.body.insertAdjacentHTML('afterbegin', html);
@@ -14,7 +14,7 @@ async function cargarEncabezado() {
 async function cargarFooter() {
     console.log("Iniciando carga de footer...");
     try {
-        const respuesta = await fetch('views/pie_pagina.html');
+        const respuesta = await fetch('encabezado_pie/pie_pagina.html');
         if (!respuesta.ok) throw new Error("No se encontró pie_pagina.html");
         const html = await respuesta.text();
         document.body.insertAdjacentHTML('beforeend', html);
@@ -28,7 +28,7 @@ async function cargarContacto() {
     console.log("Intentando cargar el formulario...");
     try {
         // CORRECCIÓN: Quitamos el doble .html
-        const respuesta = await fetch('form/form_contacto_001.html'); 
+        const respuesta = await fetch('./form/form_contacto_001.html'); 
         
         if (!respuesta.ok) throw new Error("No se pudo encontrar form_contacto_001.html");
         
