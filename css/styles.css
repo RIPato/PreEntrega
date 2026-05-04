@@ -1,20 +1,14 @@
-/* =========================================
-   Estilos Globales
-   ========================================= */
-/* 1. Fondo con degradado sutil para el Body */
+
 body {
     margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;[cite: 1]
-    line-height: 1.6;[cite: 1]
-    /* Cambio al color de fondo del pie de página */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    /* Fondo oscuro para que combine con tus etiquetas #f0f0f0 */
     background-color: #222;
-    /* Cambio de color de texto para que resalte sobre el oscuro */
+    /* Texto claro para legibilidad */
     color: #eee; 
 }
 
-/* =========================================
-   Header y Navegación
-   ========================================= */
 .main-header {
     width: 100%;
     background-color: #333; /* Fondo de seguridad si la imagen no carga */
@@ -46,9 +40,7 @@ body {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
-/* =========================================
-   Contenido Principal y Footer
-   ========================================= */
+
 .main-container {
     max-width: 800px;
     margin: 40px auto; /* Centra el contenedor con margen arriba/abajo */
@@ -83,17 +75,14 @@ footer p {
 /* video */
 
 .video-container {
-    display: flex;          /* Activamos el modo flexible */
-    justify-content: center; /* Centra el contenido de forma horizontal */
-    align-items: center;     /* Centra el contenido de forma vertical (opcional) */
-    margin: 20px 0;         /* Agrega un margen arriba y abajo para que no esté pegado */
+    display: flex;          
+    justify-content: center;
+    align-items: center;    
+    margin: 20px 0;         
 }
 
-/* nuevo estilos para el index*/
-
-
 .main-container:hover {
-    transform: translateY(-5px); /* Se levanta sutilmente al pasar el mouse */
+    transform: translateY(-5px); 
 }
 
 /* 3. Títulos con estilo 'Tech' */
@@ -101,8 +90,7 @@ h2, h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #070707;
-     text-shadow: 
-        
+     text-shadow:         
         2px 2px 0px #444,
         3px 3px 0px #444;
 }
@@ -146,12 +134,18 @@ hr {
     color: white;
     font-family: sans-serif;
     font-weight: bold;
-    transition: all 0.3s ease; /* Hace que el cambio sea suave */
+    transition: all 0.3s ease; 
 }
 
-/* EL EFECTO DE RESALTADO */
+
 .nav-list a:hover {
-    color: #ff9900;       /* Cambia el color del texto */
-    text-shadow: 0 0 10px rgba(255, 153, 0, 0.7); /* Agrega un brillo */
-    transform: scale(1.1); /* Lo agranda un poquito */
+    color: #ff9900;       
+    text-shadow: 0 0 10px rgba(255, 153, 0, 0.7); 
+    transform: scale(1.1); 
+}
+
+.separador {
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 3px 0;
 }
