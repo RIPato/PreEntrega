@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RS 3D - Proyectos de Impresión</title>
-    
+
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!-- Scripts: Cargamos el JS general y los "componentes" del encabezado y pie -->
     <!-- Nota: Asegúrate de que los nombres de archivos coincidan en tu carpeta -->
     <script src="js/Javascript.js"></script>
@@ -19,33 +19,41 @@
 <body style="background-color: #444; margin: 0; font-family: Arial, sans-serif;">
 
     <form action="https://formspree.io/f/mnjlodlb" method="POST" <main class="main-container"
-    style="background-color: #333; margin: 20px auto; padding: 20px; max-width: 400px;">
+        style="background-color: #333; margin: 20px auto; padding: 20px; max-width: 400px;">
 
-    <form action="https://formspree.io/f/mnjlodlb" method="POST" style="background-color: transparent; border: none;">
-        <!-- Quitamos el borde y el color de fondo del form para que use el del contenedor -->
+        <form action="https://formspree.io/f/mnjlodlb" method="POST"
+            style="background-color: transparent; border: none;">
+            <label style="display: flex; align-items: center; margin-bottom: 15px;">
+                <span class="formulario_contacto" style="letter-spacing: 2px; color: #f0f0f0;width: 100px;">Nombre:</span>
+                <input type="text" name="name"
+                    style="flex: 1; height: 10px; padding: 5px; border-radius: 5px; border: 1px solid #888; box-shadow: 4px 4px 0px #000; outline: none; background-color: #f0f0f0;"
+                    required>
+            </label>
+            <hr class="separador">
+            <label style="display: flex; align-items: center; margin-bottom: 15px;">
+                <span class="formulario_contacto"style="letter-spacing: 2px; color: #f0f0f0; width: 85px; margin-right: 15px;">Teléfono:</span>
+                <input type="number" name="telefono"
+                    style="flex: 1; height: 10px; padding: 5px; border-radius: 5px; border: 1px solid #888; box-shadow: 4px 4px 0px #000; outline: none; background-color: #f0f0f0;"
+                    required>
+            </label>
+            <hr class="separador">
+            <label style="display: flex; align-items: center; margin-bottom: 15px;">
+                <span class="formulario_contacto" style="letter-spacing: 2px; color: #f0f0f0;width: 100px;">E-Mail:</span>
+                <input type="email" name="email"
+                    style="flex: 1; height: 10px; padding: 5px; border-radius: 5px; border: 1px solid #888; box-shadow: 4px 4px 0px #000; outline: none; background-color: #f0f0f0;"
+                    required>
+            </label>
+            <hr class="separador">
+            <label style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                <span class="formulario_contacto" style="letter-spacing: 2px; color: #f0f0f0;width: 100px;">Mensaje:</span>
+                <textarea name="mensaje"
+                    style="flex: 1; height: 100px; padding: 10px; border-radius: 5px; border: 1px solid #888; box-shadow: 4px 4px 0px #000; outline: none; background-color: #f0f0f0;"
+                    required>
+                </textarea>
+            </label>
 
-        <label style="display: flex; align-items: center; margin-bottom: 15px;">
-            <span class="formulario_contacto">Nombre:</span>
-            <input type="text" name="name" style="flex: 1; padding: 5px;" required>
-        </label>
-
-        <label style="display: flex; align-items: center; margin-bottom: 15px;">
-            <span class="formulario_contacto">Teléfono:</span>
-            <input type="number" name="telefono" style="flex: 1; padding: 5px;" required>
-        </label>
-
-        <label style="display: flex; align-items: center; margin-bottom: 15px;">
-            <span class="formulario_contacto">Email:</span>
-            <input type="email" name="email" style="flex: 1; padding: 5px;" required>
-        </label>
-
-        <label style="display: flex; align-items: flex-start; margin-bottom: 15px;">
-            <span class="formulario_contacto">Mensaje:</span>
-            <textarea name="mensaje" style="flex: 1; height: 100px; padding: 5px;" required></textarea>
-        </label>
-
-        <div style="display: flex; justify-content: flex-end; width: 100%; margin-top: 20px;">
-            <button type="submit" style="
+            <div style="display: flex; justify-content: flex-end; width: 100%; margin-top: 20px;">
+                <button type="submit" style="
                 padding: 12px 25px; 
                 cursor: pointer; 
                 background-color: #444; 
@@ -59,18 +67,18 @@
                 outline: none;
                 position: relative;           
                 " onmousedown="this.style.transform='translate(0px, 0px)'; this.style.boxShadow='2px 2px 0px #000';"
-                onmouseup="this.style.transform='translate(0, 0)'; this.style.boxShadow='4px 4px 0px #000';"
-                onmouseleave="this.style.transform='translate(0, 0)'; this.style.boxShadow='4px 4px 0px #000';">
-                Enviar
-            </button>
-        </div>
+                    onmouseup="this.style.transform='translate(0, 0)'; this.style.boxShadow='4px 4px 0px #000';"
+                    onmouseleave="this.style.transform='translate(0, 0)'; this.style.boxShadow='4px 4px 0px #000';">
+                    Enviar
+                </button>
+            </div>
+        </form>
+        </main>
     </form>
-    </main>
-</form>
 
     <script>
-        
-        
+
+
         configurarTitulo();   // Configura el título de la pestaña
         cargarEncabezado();   // Inyecta el HTML del encabezado desde encabezado.js
         cargarFooter();       // Inyecta el HTML del footer desde pie_pagina.js
@@ -78,4 +86,5 @@
     </script>
 
 </body>
+
 </html>
